@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Us</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="logo_netflix.png" alt="" width="50px">
+        </div>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Series</a>
+            <a href="">Filmes</a>
+            <a href="">Minha Lista</a>
+
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="conteudo">
+            <p class="titulo">
+                Jaao e maria
+            </p>
+            <p class="detalhes">
+                <span>5 de julho - 1 TEMPORADA</span>
+                <span class="stars">
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                </span>
+            <p class="descricao">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus? Ipsum fugit, excepturi
+                facilis consectetur recusandae quo mollitia quibusdam sint. Tempore doloremque voluptatibus harum
+                quaerat numquam iste dolores incidunt quae.
+            </p>
+            <div class="botoes">
+                <button><i class="fa-solid fa-play" style="color: #000000;"></i> Continuar</button>
+                <button><i class="fa-solid fa-star" style="color: #000000;"></i> Favorito</button>
+            </div>
+            </p>
+
+        </div>
+    </section>
+    <section class="momentos">
+        <h2>Nossos melhores momentos</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./fotos/image_2.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_3.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_4.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_1.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_2.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_3.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_4.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_1.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_2.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_3.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_4.png"></div>
+                <div class="swiper-slide"><img src="./fotos/image_1.png"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        2025 - Duzim&copy; Todos os direitos reservados.
+
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 2,
+            spaceBetween: 10,
+            breakpoints: {
+                600: {
+                    loop: true,
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                900: {
+                    loop: true,
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
